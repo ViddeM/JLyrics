@@ -18,6 +18,8 @@ package com.jagrosh.jlyrics;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import java.util.concurrent.ExecutionException;
+
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -66,6 +68,7 @@ public class LyricsTest
     }
     
     @Test
+    @Ignore
     public void geniusTest() throws InterruptedException, ExecutionException
     {
         LyricsClient client = new LyricsClient("Genius");
